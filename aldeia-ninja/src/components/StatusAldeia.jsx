@@ -1,11 +1,13 @@
 export default function StatusAldeia({ total }) {
+  let message;
   if (total === 0) {
-    return <p>A vila está vazia</p>
+    message = "A vila está vazia";
   } else if (total >= 1 && total <= 3) {
-    return <p>Precisamos de mais ninjas</p>
+    message = "Precisamos de mais ninjas";
   } else if (total >= 4 && total <= 7) {
-    return <p>Time pronto para missões!</p>
+    message = "Time pronto para missões!";
   } else {
-    return <p>Grande esquadrão em ação!</p>
+    message = "Grande esquadrão em ação!";
   }
+  return <div className="status"><p>{message}</p></div>;
 }

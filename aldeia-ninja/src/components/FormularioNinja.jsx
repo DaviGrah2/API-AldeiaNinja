@@ -18,7 +18,7 @@ export default function FormularioNinja({ onAddNinja }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <input value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome" required />
       <input value={rank} onChange={(e) => setRank(e.target.value)} placeholder="Rank" required />
       <input value={jutsu} onChange={(e) => setJutsu(e.target.value)} placeholder="Jutsu" required />

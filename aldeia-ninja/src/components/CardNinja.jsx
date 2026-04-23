@@ -1,6 +1,6 @@
 function CardNinja({ ninja, aldeaNatal, onRemover }) {
   return (
-    <div>
+    <div className="card">
       <h2>{ninja.nome}</h2>
       <p>Rank: {ninja.rank}</p>
       <p>Aldeia: {aldeaNatal}</p>
